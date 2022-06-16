@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="about">
+    <div id="header">
+        <h1>Abdullah Ali</h1>
+        <h2>About Me</h2>
+    </div>
+    <div id="about-p">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga neque nostrum dolor aut officia quibusdam!
+            Consectetur soluta maiores ratione tenetur sapiente veniam exercitationem architecto beatae, neque iusto
+            obcaecati quibusdam quas quae rerum! Esse dolorem pariatur hic nam delectus veniam expedita alias vel id,
+            nisi
+            natus tenetur suscipit, eos officia.</p>
+    </div>
+</div>
+<div id="skills">
+    <div id="subheader">
+        <h2>Skills</h2>
+        <small>(Hover over text to expand)</small>
+    </div>
+    <div class="languages rt" id="aws">
+        <img id="aws-img" src="{{ url_for('static', filename='/img/aws-logo.png')}}" alt="AWS logo">
+        Amazon Web Services
+    </div>
+    <div class="languages lt" id="python">
+        <img id="python-img" src="{{ url_for('static', filename='/img/python2.png')}}" alt="python logo">
+        Python
+    </div>
+    <div class="languages rt" id="js">
+        <img id="js-img" src="{{ url_for('static', filename='/img/JavaScript2.png')}}" alt="JS logo">
+        JavaScript
+    </div>
+    <div class="languages lt" id="postgres">
+        <img id="postgres-img" src="{{ url_for('static', filename='/img/postgres2.jpg')}}" alt="postgres logo">
+        Postgres
+    </div>
+</div>
+<div id="project-container">
+    <div id="projects">
+        <h2>Projects</h2>
+    </div>
+</div>
+<div id="form-container">
+    <h2>Contact</h2>
+    <small>Leave a message and I'll get back to you as soon as possible</small>
+    <form action="/index.html" id="form-id">
+        <input type="name" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="message ..."></textarea>
+    </form>
+    <small>Your information will be kept </small>
+</div>
+{% endblock %}
